@@ -58,7 +58,7 @@ class NoticeController(
     }
 
     @PostMapping("/{id}/comments")
-    fun addComment(
+    fun addComment (
         @PathVariable id: Long,
         @Valid @RequestBody req: CommentRequest
     ): ResponseEntity<Any> {
